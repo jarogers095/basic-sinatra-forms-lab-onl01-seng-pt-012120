@@ -6,7 +6,7 @@ class App < Sinatra::Base
   end
   
   post "/team" do
-    @params = params[:c]
+    @center = params[:c]
     erb :team
   end
 
